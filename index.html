@@ -32,6 +32,7 @@
                     <a class="dropdown" href="#css-section">CSS</a>
                     <ul class="dropdown-content">
                         <li><a href="#header-color">Color</a></li>
+                        <li><a href="#header-box-model">Box Model</a></li>
                     </ul>
                 </li>
             </ul>
@@ -39,12 +40,14 @@
 
     </header>
 
-<!-- HTML Basics -->
+<!-- HTML -->
 
     <section id="html-section">
         
         <h2 title="HyperText Markup Language">HTML</h2>
         
+<!-- HTML Basics -->
+
         <table>
 
             <thead>
@@ -60,13 +63,13 @@
             </thead>
 
             <tbody>
-                <tr class="table-data">
+                <tr>
                     <td class="tag-data">&lt;!DOCTYPE&gt;</td>
                     <td>HTML Document Type</td>
                     <td>Declares the file an HTML document</td>
                     <td><i>html</i></td>
                 </tr>
-                <tr class="table-data">
+                <tr>
                     <td class="tag-data">&lt;html&gt;</td>
                     <td>HTML</td>
                     <td>Wraps all the content on the entire page and is sometimes known as the root element</td>
@@ -146,11 +149,36 @@
 
     </section>
 
-<!-- CSS Color -->
+<!-- CSS -->
 
     <section id="css-section">
 
         <h2 title="Cascading Style Sheets">CSS</h2>
+
+<!-- CSS Basics -->
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th id="header-color" class="table-header" colspan="2">Basics</th>
+                </tr>
+                <tr>
+                    <th>Selector</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors" target="_blank">* { }</a></td>
+                    <td>* is a universal selector. It can be used to select any and all types of elements in an HTML page. The asterisk can also be followed by a selector while using to select a child object. This selector is useful when we want to select all the elements on the page</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+<!-- CSS Color -->
 
         <table>
 
@@ -166,36 +194,181 @@
             </thead>
             
             <tbody>
-                <tr class="table-data">
-                    <td>color:</td>
+                <tr>
+                    <td class="align-top" rowspan="6">color:</td>
                     <td>Sets the color of the element by color name (there are 147 color names)</td>
                     <td>blue;</td>
                 </tr>
                 <tr>
-                    <td></td>
                     <td>Sets the color by hex code</td>
                     <td>#0000FF;</td>
                 </tr>
                 <tr>
-                    <td></td>
                     <td>Sets the color by rgb (red, green, blue) with either values 0-255 or percentages</td>
                     <td>rgb(0, 0, 255); or rgb(0%, 0%, 100%);</td>
                 </tr>
                 <tr>
-                    <td></td>
                     <td>Can also set opacity with rgba (alpha) using a value between 0 (0% opacity) and 1.0 (100% opacity)</td>
                     <td>rgb(0, 0, 255, 0.5);</td>
                 </tr>
                 <tr>
-                    <td></td>
                     <td>Sets the color by hsl (hue, saturation, lightness) with hue values between 0-360, and saturation and lightness as percentages from 0%-100%</td>
                     <td>hsl(240, 100%, 50%);</td>
                 </tr>
                 <tr>
-                    <td></td>
                     <td>Can also set opacity with hsla (alpha) using a value between 0 (0% opacity) and 1.0 (100% opacity)</td>
                     <td>hsla(240, 100%, 50%, 0.5);</td>
                 </tr>
+            </tbody>
+
+        </table>
+
+<!-- CSS Box Model -->
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th id="header-box-model" class="table-header" colspan="3">Box Model</th>
+                </tr>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                    <th>Values</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+
+        <!-- Width -->
+
+                <tr>
+                    <td>width:</td>
+                    <td>The width of the content area. Set in pixels</td>
+                    <td>1600px;</td>
+                </tr>
+                <tr>
+                    <td>min-width:</td>
+                    <td>Ensures a minimum width of an element’s box</td>
+                    <td>300px;</td>
+                </tr>
+                <tr>
+                    <td>max-width:</td>
+                    <td>Ensures a maximum width of an element’s box</td>
+                    <td>600px;</td>
+                </tr>
+
+        <!-- Height -->
+
+                <tr>
+                    <td>height:</td>
+                    <td>The height of the content area. Set in pixels</td>
+                    <td>800px;</td>
+                </tr>
+                <tr>
+                    <td>min-height:</td>
+                    <td>Ensures a minimum height for an element’s box</td>
+                    <td>150px;</td>
+                </tr>
+                <tr>
+                    <td>max-height:</td>
+                    <td>Ensures a maximum height of an element’s box</td>
+                    <td>300px;</td>
+                </tr>
+
+        <!-- Padding -->
+
+                <tr>
+                    <td>padding:</td>
+                    <td>The amount of space between the content area and the border on all four sides</td>
+                    <td>10px; or 5px(top and bottom) 10px(left and right); or 5px(top) 10px(left and right) 20px(bottom); or 5px 10px 15px 20px; (clockwise from top)</td>
+                </tr>
+                <tr>
+                    <td>padding-top:</td>
+                    <td>The amount of space between the top of the content area and the top border</td>
+                    <td>10px;</td>
+                </tr>
+                <tr>
+                    <td>padding-right:</td>
+                    <td>The amount of space between the right of the content area and the right border</td>
+                    <td>10px;</td>
+                </tr>
+                <tr>
+                    <td>padding-bottom:</td>
+                    <td>The amount of space between the bottom of the content area and the bottom border</td>
+                    <td>10px;</td>
+                </tr>
+                <tr>
+                    <td>padding-left:</td>
+                    <td>The amount of space between the left of the content area and the left border</td>
+                    <td>10px;</td>
+                </tr>
+
+        <!-- Border -->
+
+                <tr>
+                    <td>border:</td>
+                    <td>The thickness and style of the border surrounding the content area and padding. Can set width, style, and color</td>
+                    <td>3px solid coral;</td>
+                </tr>
+                <tr>
+                    <td>border-radius:</td>
+                    <td>Modifies the corners of an element’s border box. Can be set in pixels and percentage</td>
+                    <td>5px; 50%; (perfect circle)</td>
+                </tr>
+
+        <!-- Margin -->
+
+                <tr>
+                    <td class="align-top" rowspan="2">margin:</td>
+                    <td>The amount of space between the border and the outside edge of the element. Used to specify the size of the space directly outside of the box</td>
+                    <td>10px; or 5px(top and bottom) 10px(left and right); or 5px(top) 10px(left and right) 20px(bottom); or 5px 10px 15px 20px; (clockwise from top)</td>
+                </tr>
+                <tr>
+                    <td>Centers the content in their containing elements as long as a width is set. The 0 sets the top and bottom margins to 0 pixels. Auto instructs the browser to adjust the left and right margins until the element is centered within its containing element</td>
+                    <td>0 auto;</td>
+                </tr>
+                <tr>
+                    <td>margin-top:</td>
+                    <td>The amount of space between the top border and the top, outside edge of the element</td>
+                    <td>10px;</td>
+                </tr>
+                <tr>
+                    <td>margin-right:</td>
+                    <td>The amount of space between the right border and the right, outside edge of the element</td>
+                    <td>10px;</td>
+                </tr>
+                <tr>
+                    <td>margin-bottom:</td>
+                    <td>The amount of space between the bottom border and the bottom, outside edge of the element</td>
+                    <td>10px;</td>
+                </tr>
+                <tr>
+                    <td>margin-left:</td>
+                    <td>The amount of space between the left border and the left, outside edge of the element</td>
+                    <td>10px;</td>
+                </tr>
+
+        <!-- Overflow -->
+
+                <tr>
+                    <td class="align-top" rowspan="4"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow" target="_blank">overflow:</a></td>
+                    <td>Controls what happens to content that spills, or overflows, outside its box</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Any content that overflows will be hidden from view</td>
+                    <td>hidden;</td>
+                </tr>
+                <tr>
+                    <td>A scrollbar will be added to the element’s box so that the rest of the content can be viewed by scrolling</td>
+                    <td>scroll;</td>
+                </tr>
+                <tr>
+                    <td>Default value. The overflow content will be displayed outside of the containing element</td>
+                    <td>visible;</td>
+                </tr>
+
             </tbody>
 
         </table>
