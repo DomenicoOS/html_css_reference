@@ -1,0 +1,122 @@
+body {
+    background-color: #2d2d3e;
+}
+
+h1, h2, li, table, th, tr, td {
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* Header */
+
+    header {
+        color: #4a9aff;
+        margin: auto;
+        max-width: 1400px;
+        min-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    h1 {
+        font-size: 48px;
+        font-family: 'Orbitron', sans-serif;
+        text-align: center;
+        padding: 8px;
+    }
+
+    .nav-top {
+        text-align: center;
+    }
+
+    .nav-top li {
+        font-size: 24px;
+        font-weight: bold;
+        font-family: 'Orbitron', sans-serif;
+        padding: 4px 8px;
+        margin-right: 36px;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:link {
+        color: #4a9aff;
+    }
+
+    a:visited {
+        color: #4a9aff;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+/* Both Sections */
+
+    section {
+        text-align: center;
+        max-width: 1200px;
+        min-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    h2 {
+        color: #4a9aff;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Orbitron', sans-serif;
+        padding: 8px;
+    }
+
+    table {
+        font-family: sans-serif;
+        min-width: 600px;
+        max-width: 1000px;
+        margin: auto;
+        border-collapse: collapse;
+        margin-top: 32px;
+    }
+
+    .table-header {
+        font-size: 32px;
+    }
+
+    th {
+        color: #4a9aff;
+        font-size: 24px;
+        font-family: 'Orbitron', sans-serif;
+        padding: 4px 8px;
+    }
+
+    tr, td {
+        padding: 4px 8px;
+    }
+
+    td {
+        color: aliceblue;
+    }
+
+    .tag-data {
+        font-family: monospace;
+        font-size: 18px;
+    }
+
+/* HTML Section */
+
+
+
+/* CSS Section */
+
